@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER LINKS STYLE*/
+/*
+body{
+    overflow-x: hidden; Hide horizontal scrollbar 
+}
+
+*/
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 10%;
+    background-color: white;
+}
+
+
+nav{
+    background-color: white;
+    position: relative;
+    width: 50%;
+}
+
+.nav__links{
+    background-color: white;
+    margin-top: 25px;
+}
+
+
+.nav__links li, a {
+    background-color: transparent;
+    font-family: 'Saira Stencil One';
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.nav-icons, svg {
+    background-color:white;
+}
+
+
+.nav-icons a{
+    color:rgb(148, 22, 22);
+    align-items: flex-end;
+    padding: 5px;
+}
+
+.nav-icons a:hover {
+    color: rgb(252, 6, 6);
+    
+}       
+
+/*      Scrolling text Style        */
+
+.scrolling {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.scrolling p {
+    font-family: 'Saira Stencil One';
+    letter-spacing: 2px;
+    color: yellow;
+    background-color: red;
+    padding: 5px ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/*NAVIGATION LINKS STYLE ENDS HERE*/
+
+
+/*     MAIN STYLE */
+
+        /*carousel*/
+
+.carousel-item{
+    height: 510px;
+    object-fit: cover;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+  }
+
+.carousel-control-prev {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.carousel-control-next{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+        /*carousel*/
+
+
+/*      FOOTER STYLE STARTS HERE*/
+/* CODE CHECKED TILL HERE*/
+
+.background{
+    opacity: 0.10;
+    z-index: 1;
+}
+img.background-footer{
+    position: absolute;
+	max-width: 80%;
+	top: 140%;
+	left: 10%;
+}
+img.background-footer:empty
+{
+	top: 140%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+footer{
+    height: 657px;
+}
+
+ footer p, h5{
+   
+    font-family: 'Saira Stencil One';
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(229, 255, 0);
+    text-decoration: none;
+       
+}
+
+.champions  img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+    
+}
+
+.champions {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.champions a, h5 {
+    text-decoration: none;
+    z-index: 2;
+    padding: 20px;
+    background-color: transparent;
+    color: yellow;
+    font-size: 20px;
+    text-align: center;
+}
+
+.champions a h5{
+    transition: all 0.3s ease 0s;
+}
+
+.champions a h5:hover{
+    color: rgb(156, 156, 0);
+}
+
+table {
+    z-index: 2;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table, th, td {
+    border: 2px solid yellow;
+    color: yellow;
+    border-collapse: collapse;
+}
+
+.about-me{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.about-me p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.icons-footer {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+}
+
+footer svg{
+    background-color: black;
+    color: yellow;
+    margin-bottom: 10px;
+}
+.icons-footer svg:hover{
+    color: rgb(156, 156, 0);
+}
